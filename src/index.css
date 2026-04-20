@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Helvetica Neue", Arial, sans-serif;
+  
+  --color-navy: #0B3C5D;
+  --color-teal: #3AAFA9;
+  --color-bg-page: #FAFAFA;
+  --color-text-main: #4A5568;
+  --color-border-subtle: #E2E8F0;
+  
+  /* Brand aliases for consistency with previous components */
+  --color-brand-teal: var(--color-teal);
+  --color-brand-navy: var(--color-navy);
+}
+
+@layer base {
+  body {
+    @apply font-sans text-text-main bg-bg-page antialiased selection:bg-teal selection:text-white;
+  }
+  
+  h1, h2, h3, h4 {
+    @apply text-navy;
+  }
+}
+
+@layer utilities {
+  .hero-bg {
+    background-image: 
+        radial-gradient(at 0% 0%, rgba(58, 175, 169, 0.05) 0px, transparent 50%);
+  }
+  
+  .pill-shadow {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+  }
+  
+  .image-shadow {
+    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--color-border-subtle); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #CBD5E0; }
