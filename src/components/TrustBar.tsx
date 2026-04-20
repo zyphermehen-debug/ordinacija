@@ -20,7 +20,7 @@ export default function TrustBar() {
     <section className="border-y border-border-subtle bg-white py-10 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
         <p className="text-center text-sm font-medium text-gray-400 mb-10 uppercase tracking-widest">
-          Trusted by executives and families worldwide
+          Poverenje direktora i porodica širom sveta
         </p>
         
         <div className="relative flex">

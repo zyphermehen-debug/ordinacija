@@ -28,62 +28,62 @@ export default function App() {
         {/* Booking Form Section */}
         <section id="booking" className="py-24 bg-white">
           <div className="max-w-7xl mx-auto px-6">
-            <div className="bg-navy rounded-[2.5rem] overflow-hidden flex flex-col lg:flex-row shadow-2xl">
-              <div className="lg:w-1/2 p-12 lg:p-20 flex flex-col justify-center text-white">
-                <h2 className="text-4xl font-semibold tracking-tight mb-6">Begin Your Journey to Excellence.</h2>
+            <div className="bg-navy rounded-3xl md:rounded-[2.5rem] overflow-hidden flex flex-col lg:flex-row shadow-2xl">
+              <div className="lg:w-1/2 p-8 md:p-12 lg:p-20 flex flex-col justify-center text-white">
+                <h2 className="text-3xl md:text-4xl font-semibold tracking-tight mb-6">Započnite Svoje Putovanje ka Izvrsnosti.</h2>
                 <p className="text-teal text-lg mb-8 leading-relaxed">
-                  Schedule your private consultation today. Our concierge team will reach out within 2 hours to confirm your appointment.
+                  Zakažite svoju privatnu konsultaciju danas. Naš tim će vas kontaktirati u roku od 2 sata radi potvrde termina.
                 </p>
                 <div className="space-y-4">
                   <div className="flex items-center gap-3">
                     <div className="w-2 h-2 rounded-full bg-teal"></div>
-                    <span className="text-sm opacity-80">Immediate assessment available</span>
+                    <span className="text-sm opacity-80">Trenutna procena dostupna</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <div className="w-2 h-2 rounded-full bg-teal"></div>
-                    <span className="text-sm opacity-80">Full administrative discretion</span>
+                    <span className="text-sm opacity-80">Potpuna administrativna diskrecija</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <div className="w-2 h-2 rounded-full bg-teal"></div>
-                    <span className="text-sm opacity-80">Bespoke medical coordination</span>
+                    <span className="text-sm opacity-80">Personalizovana medicinska koordinacija</span>
                   </div>
                 </div>
               </div>
               
-              <div className="lg:w-1/2 bg-white p-12 lg:p-20">
+              <div className="lg:w-1/2 bg-white p-8 md:p-12 lg:p-20">
                 <form className="space-y-6">
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                     <div className="space-y-2">
-                      <label className="text-xs font-semibold text-navy uppercase tracking-wider">Full Name</label>
+                      <label className="text-xs font-semibold text-navy uppercase tracking-wider">Ime i Prezime</label>
                       <input 
                         type="text" 
-                        placeholder="John Doe"
+                        placeholder="Petar Petrović"
                         className="w-full px-4 py-3 rounded-xl border border-border-subtle focus:border-teal outline-none transition-colors text-sm"
                       />
                     </div>
                     <div className="space-y-2">
-                      <label className="text-xs font-semibold text-navy uppercase tracking-wider">Email Address</label>
+                      <label className="text-xs font-semibold text-navy uppercase tracking-wider">Email Adresa</label>
                       <input 
                         type="email" 
-                        placeholder="john@example.com"
+                        placeholder="petar@primer.rs"
                         className="w-full px-4 py-3 rounded-xl border border-border-subtle focus:border-teal outline-none transition-colors text-sm"
                       />
                     </div>
                   </div>
                   <div className="space-y-2">
-                    <label className="text-xs font-semibold text-navy uppercase tracking-wider">Service of Interest</label>
+                    <label className="text-xs font-semibold text-navy uppercase tracking-wider">Usluga</label>
                     <select className="w-full px-4 py-3 rounded-xl border border-border-subtle focus:border-teal outline-none transition-colors text-sm bg-white">
-                      <option>Executive Health Screening</option>
-                      <option>Advanced Cardiology Consult</option>
-                      <option>Precision Diagnostics</option>
-                      <option>Other / General Interest</option>
+                      <option>Izvršni Zdravstveni Pregled</option>
+                      <option>Napredna Kardiološka Konsultacija</option>
+                      <option>Precizna Dijagnostika</option>
+                      <option>Ostalo / Opšti Interes</option>
                     </select>
                   </div>
                   <div className="space-y-2">
-                    <label className="text-xs font-semibold text-navy uppercase tracking-wider">Message (Optional)</label>
+                    <label className="text-xs font-semibold text-navy uppercase tracking-wider">Poruka (Opciono)</label>
                     <textarea 
                       rows={4}
-                      placeholder="Tell us how we can help you..."
+                      placeholder="Recite nam kako vam možemo pomoći..."
                       className="w-full px-4 py-3 rounded-xl border border-border-subtle focus:border-teal outline-none transition-colors text-sm resize-none"
                     ></textarea>
                   </div>
@@ -92,10 +92,10 @@ export default function App() {
                     whileTap={{ scale: 0.98 }}
                     className="w-full bg-teal text-white font-semibold py-4 rounded-xl shadow-lg hover:shadow-teal/20 transition-all"
                   >
-                    Request Consultation
+                    Zatražite Konsultaciju
                   </motion.button>
                   <p className="text-[10px] text-center text-gray-400 mt-4 leading-relaxed">
-                    By submitting this form, you agree to our privacy policy and the handling of your data for clinical coordination purposes.
+                    Slanjem ovog formulara slažete se sa našom politikom privatnosti i obradom vaših podataka u svrhe kliničke koordinacije.
                   </p>
                 </form>
               </div>

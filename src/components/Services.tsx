@@ -4,31 +4,31 @@ import { Stethoscope, HeartPulse, TestTube2, ArrowRight } from 'lucide-react';
 const services = [
   {
     icon: <Stethoscope size={32} />,
-    title: 'Executive Health',
-    description: 'Comprehensive, full-day physical examinations designed for busy professionals, including advanced preventative screening.',
+    title: 'Zdravlje Direktora',
+    description: 'Sveobuhvatni, celodnevni fizički pregledi dizajnirani za zauzete profesionalce, uključujući napredne preventivne skrinige.',
   },
   {
     icon: <HeartPulse size={32} />,
-    title: 'Advanced Cardiology',
-    description: 'State-of-the-art cardiovascular screening and ongoing management by top-tier cardiologists.',
+    title: 'Napredna Kardiologija',
+    description: 'Najsavremeniji kardiovaskularni skrinig i kontinuirano upravljanje od strane vrhunskih kardiologa.',
   },
   {
     icon: <TestTube2 size={32} />,
-    title: 'Precision Diagnostics',
-    description: 'In-house laboratories and imaging facilities providing immediate, highly accurate results without the wait.',
+    title: 'Precizna Dijagnostika',
+    description: 'Sopstvene laboratorije i objekti za snimanje koji pružaju trenutne, visoko tačne rezultate bez čekanja.',
   },
 ];
 
 export default function Services() {
   return (
-    <section id="services" className="py-24 bg-bg-page">
-      <div className="max-w-7xl mx-auto px-6">
+    <section id="services" className="py-24 bg-bg-page px-6 md:px-10">
+      <div className="max-w-7xl mx-auto">
         <div className="text-center max-w-2xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-navy mb-4">
-            Comprehensive Private Healthcare
+            Sveobuhvatna Privatna Zdravstvena Zaštita
           </h2>
           <p className="text-text-main text-base">
-            We provide a full spectrum of proactive and reactive medical services, tailored to your unique biology and lifestyle.
+            Pružamo pun spektar proaktivnih i reaktivnih medicinskih usluga, prilagođenih vašoj jedinstvenoj biologiji i životnom stilu.
           </p>
         </div>
         
@@ -50,7 +50,7 @@ export default function Services() {
                 {service.description}
               </p>
               <a href="#" className="inline-flex items-center gap-2 text-sm font-medium text-teal hover:text-navy transition-colors">
-                Learn more <ArrowRight size={16} />
+                Saznajte više <ArrowRight size={16} />
               </a>
             </motion.div>
           ))}

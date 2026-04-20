@@ -5,18 +5,18 @@ export default function About() {
   const highlights = [
     {
       icon: <Clock size={24} />,
-      title: 'Zero Wait Times',
-      description: 'Your time is invaluable. Appointments start exactly when scheduled.',
+      title: 'Nula Čekanja',
+      description: 'Vaše vreme je neprocenjivo. Pregledi počinju tačno u zakazano vreme.',
     },
     {
       icon: <MessageSquare size={24} />,
-      title: 'Unhurried Consultations',
-      description: 'Minimum 45-minute appointments to ensure all your concerns are heard.',
+      title: 'Konsultacije Bez Žurbe',
+      description: 'Minimum 45-minutni pregledi kako bismo osigurali da se čuju svi vaši problemi.',
     },
     {
       icon: <Star size={24} />,
-      title: 'Elite Specialists',
-      description: 'Access to a curated network of globally recognized medical professionals.',
+      title: 'Elitni Specijalisti',
+      description: 'Pristup pažljivo biranoj mreži globalno priznatih medicinskih stručnjaka.',
     },
   ];
 
@@ -29,11 +29,11 @@ export default function About() {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-navy mb-8">
-            Redefining the Standard of Care.
+          <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-navy mb-8 leading-tight">
+            Redefinisanje Standarda Nege.
           </h2>
-          <p className="text-lg text-text-main mb-16 leading-relaxed max-w-2xl mx-auto">
-            At NovaCare, we believe healthcare should be proactive, personalized, and entirely focused on you. We have eliminated the waiting rooms and rushed appointments, replacing them with a sanctuary of healing and uncompromised medical excellence.
+          <p className="text-base md:text-lg text-text-main mb-16 leading-relaxed max-w-2xl mx-auto font-normal">
+            U NovaCare klinici verujemo da zdravstvena zaštita treba da bude proaktivna, personalizovana i potpuno fokusirana na vas. Eliminisali smo čekaonice i užurbane sastanke, zamenivši ih utočištem isceljenja i beskompromisne medicinske izvrsnosti.
           </p>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
@@ -50,7 +50,7 @@ export default function About() {
                   {item.icon}
                 </div>
                 <h4 className="text-xl font-bold text-navy mb-3">{item.title}</h4>
-                <p className="text-sm text-text-main leading-relaxed">{item.description}</p>
+                <p className="text-sm text-text-main leading-relaxed px-4">{item.description}</p>
               </motion.div>
             ))}
           </div>

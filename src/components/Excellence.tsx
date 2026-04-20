@@ -2,15 +2,15 @@ import { motion } from 'motion/react';
 
 export default function Excellence() {
   const stats = [
-    { value: '99+', label: 'Elite Specialists' },
-    { value: '10+', label: 'Years of Mastery' },
-    { value: 'Top 1%', label: 'Medically Rated' },
-    { value: '24/7', label: 'Concierge Access' },
+    { value: '99+', label: 'Elitnih Specijalista' },
+    { value: '10+', label: 'Godina Iskustva' },
+    { value: 'Top 1%', label: 'Medicinski Rang' },
+    { value: '24/7', label: 'Konsijerž Pristup' },
   ];
 
   return (
-    <section id="results" className="py-20 bg-navy border-t border-white/10 overflow-hidden">
-      <div className="max-w-7xl mx-auto px-10 flex flex-col md:flex-row justify-around items-center gap-12 md:gap-0">
+    <section id="results" className="py-20 bg-navy border-t border-white/10 overflow-hidden px-6">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-around items-center gap-12 md:gap-0">
         {stats.map((stat, index) => (
           <motion.div 
             key={index}
